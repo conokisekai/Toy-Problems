@@ -20,14 +20,3 @@ function calculateDemeritPoints(speed) {
     }
   }
   
-  // Prompt the user for input
-  const inputSpeed = prompt('Enter car speed (in km/h):'); // Prompt for user input
-  const speed = parseFloat(inputSpeed); // Convert the input to a floating-point number
-  
-  if (!isNaN(speed)) { // Check if the input is a valid number
-    const result = calculateDemeritPoints(speed); // Calculate demerit points
-    alert(result); // Display the result to the user using an alert
-  } else {
-    alert('Invalid input: Please enter a valid number.'); // Handle invalid input
-  }
-  

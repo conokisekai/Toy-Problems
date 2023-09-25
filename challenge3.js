@@ -23,21 +23,3 @@ function calculateNetSalary(basicSalary, benefits) {
   };
 }
 
-// Prompt the user for input
-const inputBasicSalary = prompt('Enter basic salary:');
-const inputBenefits = prompt('Enter benefits:');
-const basicSalary = parseFloat(inputBasicSalary);
-const benefits = parseFloat(inputBenefits);
-
-if (!isNaN(basicSalary) && !isNaN(benefits)) {
-  const result = calculateNetSalary(basicSalary, benefits);
-
-  // Display the calculated values to the user
-  alert(`Gross Salary: ${result.grossSalary.toFixed(2)}`);
-  alert(`Tax (Payee): ${result.tax.toFixed(2)}`);
-  alert(`NHIF Deduction: ${result.nhifDeduction.toFixed(2)}`);
-  alert(`NSSF Deduction: ${result.nssfDeduction.toFixed(2)}`);
-  alert(`Net Salary: ${result.netSalary.toFixed(2)}`);
-} else {
-  alert('Invalid input: Please enter valid numeric values for basic salary and benefits.');
-}

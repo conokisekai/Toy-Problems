@@ -18,14 +18,3 @@ function calculateGrade(marks) {
       return 'Invalid input: Marks should be between 0 and 100.';
     }
   }
-  
-  // Prompt the user for input
-  const inputMarks = prompt('Enter student marks:'); // Prompt for user input
-  const marks = parseFloat(inputMarks); // Convert the input to a floating-point number
-  
-  if (!isNaN(marks)) { // Check if the input is a valid number
-    const grade = calculateGrade(marks); // Calculate the grade
-    alert(`The grade for ${marks} marks is: ${grade}`); // Display the result to the user
-  } else {
-    alert('Invalid input: Please enter a valid number.'); // Handle invalid input
-  }
