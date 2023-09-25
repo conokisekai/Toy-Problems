@@ -19,4 +19,4 @@ function calculateDemeritPoints(speed) {
       }
     }
   }
-  
+  console.log(calculateDemeritPoints(95))
